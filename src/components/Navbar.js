@@ -12,7 +12,8 @@ const Navbar = () => {
             <nav>
                 <div className="navbar-container">
                     <div className="navbar-logo">
-                        <img src="/images/logo.png" alt="Logo Maison Bien-Être" className="logo-image" />
+
+                        <img src={`${process.env.PUBLIC_URL}/images/logo.png`} alt="Logo Maison Bien-Être" className="logo-image" />
                         <span className="logo-text">Harmony Nature</span>
                     </div>
 

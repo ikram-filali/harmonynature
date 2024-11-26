@@ -12,13 +12,13 @@ const Services = () => {
                     </p>
                 </div>
                 <div className="service-image">
-                    <img src="/images/massage.jpg" alt="Massage Relaxant" />
+                    <img src={`${process.env.PUBLIC_URL}/images/massage.jpg`} alt="Massage Relaxant" />
                 </div>
             </div>
 
             <div className="service" data-aos="fade-left">
                 <div className="service-image">
-                    <img src="/images/yoga.jpg" alt="Séance de Yoga" />
+                    <img src={`${process.env.PUBLIC_URL}/images/yoga.jpg`} alt="Séance de Yoga" />
                 </div>
                 <div className="service-text">
                     <h3>Séance de Yoga</h3>
@@ -36,13 +36,13 @@ const Services = () => {
                     </p>
                 </div>
                 <div className="service-image">
-                    <img src="/images/skincare.jpg" alt="Soins Visage" />
+                    <img src={`${process.env.PUBLIC_URL}/images/skincare.jpg`} alt="Soins Visage" />
                 </div>
             </div>
 
             <div className="service" data-aos="fade-left">
                 <div className="service-image">
-                    <img src="/images/spa.jpg" alt="Soins Spa" />
+                    <img src={`${process.env.PUBLIC_URL}/images/spa.jpg`} alt="Soins Spa" />
                 </div>
                 <div className="service-text">
                     <h3>Soins Spa</h3>
@@ -60,7 +60,7 @@ const Services = () => {
                     </p>
                 </div>
                 <div className="service-image">
-                    <img src="/images/reflexologie.jpg" alt="Réflexologie" />
+                    <img src={`${process.env.PUBLIC_URL}/images/reflexologie.jpg`} alt="Réflexologie" />
                 </div>
             </div>
         </section>

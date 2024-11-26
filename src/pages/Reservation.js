@@ -16,7 +16,7 @@ const Reservation = () => {
                     <a href="#contact" className="btn-reservation">Réserver un Séjour</a>
                 </div>
                 <div className="reservation-image">
-                    <img src="/images/sejour.jpg" alt="Séjour Bien-être" />
+                    <img src={`${process.env.PUBLIC_URL}/images/sejour.jpg`} alt="Séjour Bien-être" />
                 </div>
             </div>
         </section>

@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import 'aos/dist/aos.css';
+import AOS from 'aos';
+import { useEffect, useState } from 'react';
+
+import Presentation from './pages/Presentation';
+import Services from './pages/Services';
+import Contact from './pages/Contact';
+import Footer from './components/Footer';
+import Accueil from "./components/Accueil";
+import Navbar from "./components/Navbar";
+import Reservation from "./pages/Reservation";
 
 function App() {
+    const [menuOpen, setMenuOpen] = useState(false);
+    useEffect(() => {
+        AOS.init({ duration: 1000 }); // Initialisation avec une durée d'animation
+    }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div>
+          <Navbar />
+          <Accueil />
+          <Presentation />
+          <Services />
+          <Reservation />
+          <Contact />
+          <Footer />
+      </div>
   );
 }
 
