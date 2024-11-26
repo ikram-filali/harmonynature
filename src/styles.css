@@ -1,0 +1,467 @@
+/* Couleurs globales */
+:root {
+    --bg-color: #f7f4ef; /* Fond beige clair */
+    --text-color: #4a4a4a; /* Texte principal */
+    --heading-color: #2b2b2b; /* Couleur des titres */
+    --accent-color: #c89f94; /* Accent rose poudré */
+    --secondary-color: #ece4db; /* Beige secondaire */
+    --link-hover-color: #b0867b; /* Accent foncé au survol */
+}
+
+/* Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Global */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    color: var(--heading-color);
+    margin: 0 0 1rem;
+    line-height: 1.4;
+}
+
+p {
+    font-family: 'Lora', serif;
+    margin: 0 0 1rem;
+    font-size: 1rem;
+}
+
+/* Navbar */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: var(--bg-color);
+    border-bottom: 1px solid var(--secondary-color);
+    z-index: 1000;
+    padding: 0.5rem 2rem;
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    color: var(--heading-color);
+    text-transform: uppercase;
+}
+/* Logo */
+
+.logo-image {
+    height: 70px;
+    width: auto;
+    margin-right: 1rem;
+}
+@media screen and (max-width: 768px) {
+    .logo-image {
+        height: 40px; /* Réduction de la taille du logo sur mobile */
+    }
+}
+.logo-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: var(--heading-color);
+    margin-left: 0.5rem;
+}
+
+
+.navbar-links{
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar-links a:hover{
+    color: var(--link-hover-color);
+}
+
+/* Bouton Se Connecter dans la navbar */
+.btn {
+    background-color: var(--accent-color);
+    color: #fff;
+    padding: 0.5rem 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: var(--link-hover-color);
+    transform: scale(1.05);
+}
+
+/* Overlay du Modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Contenu du Modal */
+.modal {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.modal h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.modal form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.modal input {
+    padding: 0.8rem;
+    border: 1px solid var(--secondary-color);
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.modal button {
+    background: var(--accent-color);
+    color: #fff;
+    border: none;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.modal button:hover {
+    background: var(--link-hover-color);
+}
+
+.close-modal {
+    margin-top: 1rem;
+    background: transparent;
+    color: var(--text-color);
+    font-size: 0.9rem;
+    cursor: pointer;
+    border: none;
+    text-decoration: underline;
+}
+
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url('../public/images/hero-placeholder.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 2rem;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+    color: wheat;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    font-family: 'Lora', serif;
+    margin-bottom: 2rem;
+    max-width: 600px;
+}
+
+.hero a {
+    background: var(--accent-color);
+    color: #fff;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.hero a:hover {
+    background: var(--link-hover-color);
+}
+
+/* Sections */
+section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: var(--bg-color);
+}
+
+#presentation, #contact {
+    background: #fff;
+    border-radius: 8px;
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Section Services */
+#services {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+/* Services */
+.service {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4rem;
+    gap: 2rem;
+}
+
+.service.reverse {
+    flex-direction: row-reverse; /* Inversion pour alterner l'affichage */
+}
+
+/* Texte des services */
+.service-text {
+    flex: 1;
+    text-align: left;
+}
+
+.service-text h3 {
+    font-size: 2rem;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 1rem;
+    color: var(--heading-color);
+}
+
+.service-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+/* Image des services */
+.service-image {
+    flex: 1;
+}
+
+.service-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .service {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .service.reverse {
+        flex-direction: column-reverse;
+    }
+
+    .service-image img {
+        width: 100%;
+    }
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid var(--secondary-color);
+    border-radius: 4px;
+}
+
+form button {
+    background: var(--accent-color);
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: var(--link-hover-color);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: var(--secondary-color);
+    color: var(--text-color);
+    font-size: 0.9rem;
+    border-top: 1px solid var(--accent-color);
+}
+
+/* Animations */
+[data-aos] {
+    opacity: 0;
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+[data-aos="fade-in"] {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .navbar-links {
+        display: none;
+    }
+
+    .navbar-toggle {
+        display: block;
+        cursor: pointer;
+    }
+
+    .navbar-links.show {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        position: absolute;
+        top: 70px;
+        right: 2rem;
+        background: var(--bg-color);
+        padding: 1rem;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
+/* Section Réserver un Séjour */
+#reservation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--secondary-color); /* Beige clair */
+    padding: 4rem 2rem;
+}
+
+.reservation-content {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: center;
+}
+
+.reservation-text {
+    flex: 1;
+    text-align: left;
+}
+
+.reservation-text h2 {
+    font-size: 2.5rem;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 1rem;
+    color: var(--heading-color);
+}
+
+.reservation-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.reservation-text .btn-reservation {
+    background-color: var(--accent-color);
+    color: #fff;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+}
+
+.reservation-text .btn-reservation:hover {
+    background-color: var(--link-hover-color);
+}
+
+/* Image de la section Réserver un Séjour */
+.reservation-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.reservation-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .reservation-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .reservation-image img {
+        width: 80%;
+        max-width: 400px;
+    }
+}
+
