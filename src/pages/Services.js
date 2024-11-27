@@ -63,6 +63,32 @@ const Services = () => {
                     <img src={`${process.env.PUBLIC_URL}/images/reflexologie.jpg`} alt="Réflexologie" />
                 </div>
             </div>
+
+            <div className="service" data-aos="fade-left">
+                <div className="service-image">
+                    <img src={`${process.env.PUBLIC_URL}/images/workshop.jpg`} alt="Ateliers Collaboratifs" />
+                </div>
+                <div className="service-text">
+                    <h3>Ateliers Collaboratifs</h3>
+                    <p>
+                        Participez à des ateliers enrichissants où nous co-créons et apprenons ensemble.
+                        Idéal pour partager vos idées et repartir avec de nouvelles compétences.
+                    </p>
+                </div>
+            </div>
+
+            <div className="service" data-aos="fade-right">
+                <div className="service-text">
+                    <h3>Repas Partagés</h3>
+                    <p>
+                        Joignez-vous à nos repas collaboratifs pour partager des moments conviviaux.
+                        Une cuisine faite maison avec amour et un esprit communautaire.
+                    </p>
+                </div>
+                <div className="service-image">
+                    <img src={`${process.env.PUBLIC_URL}/images/shared-meal.jpg`} alt="Repas Partagés" />
+                </div>
+            </div>
         </section>
     );
 };
