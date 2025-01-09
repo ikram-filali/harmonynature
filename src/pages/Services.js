@@ -3,92 +3,72 @@ import React from 'react';
 const Services = () => {
     return (
         <section id="services" data-aos="fade-in">
+            {/* Regroupement Yoga et Méditation */}
             <div className="service" data-aos="fade-right">
                 <div className="service-text">
-                    <h3>Massage Relaxant</h3>
+                    <h3>Yoga et Méditation</h3>
                     <p>
-                        Profitez d’un moment de pure détente avec nos massages relaxants.
-                        Une expérience apaisante qui libère vos tensions.
+                        Profitez de séances de yoga et de méditation pour renforcer votre corps, apaiser votre esprit et améliorer votre bien-être général.
                     </p>
                 </div>
                 <div className="service-image">
-                    <img src={`${process.env.PUBLIC_URL}/images/massage.jpg`} alt="Massage Relaxant" />
+                    <img src={`${process.env.PUBLIC_URL}/images/yoga.jpg`} alt="Yoga et Méditation" />
                 </div>
             </div>
 
+            {/* Regroupement des Soins (Visage, Massage, etc.) */}
             <div className="service" data-aos="fade-left">
                 <div className="service-image">
-                    <img src={`${process.env.PUBLIC_URL}/images/yoga.jpg`} alt="Séance de Yoga" />
+                    <img src={`${process.env.PUBLIC_URL}/images/soins.jpg`} alt="Soins" />
                 </div>
                 <div className="service-text">
-                    <h3>Séance de Yoga</h3>
+                    <h3>Soins Bien-Être</h3>
                     <p>
-                        Découvrez nos séances de yoga adaptées à tous les niveaux.
+                        Offrez-vous des moments de détente avec nos soins de visage, massage relaxant, hydrothérapie et aromathérapie, pour prendre soin de vous en profondeur.
                     </p>
                 </div>
             </div>
 
+            {/* Ateliers Collaboratifs */}
             <div className="service" data-aos="fade-right">
-                <div className="service-text">
-                    <h3>Soins Visage</h3>
-                    <p>
-                        Offrez-vous un soin visage pour nourrir votre peau en profondeur.
-                    </p>
-                </div>
-                <div className="service-image">
-                    <img src={`${process.env.PUBLIC_URL}/images/skincare.jpg`} alt="Soins Visage" />
-                </div>
-            </div>
-
-            <div className="service" data-aos="fade-left">
-                <div className="service-image">
-                    <img src={`${process.env.PUBLIC_URL}/images/spa.jpg`} alt="Soins Spa" />
-                </div>
-                <div className="service-text">
-                    <h3>Soins Spa</h3>
-                    <p>
-                        Détente et relaxation dans notre espace bien-être.
-                    </p>
-                </div>
-            </div>
-
-            <div className="service" data-aos="fade-right">
-                <div className="service-text">
-                    <h3>Réflexologie</h3>
-                    <p>
-                        Un soin par les pieds pour stimuler la circulation et apaiser.
-                    </p>
-                </div>
-                <div className="service-image">
-                    <img src={`${process.env.PUBLIC_URL}/images/reflexologie.jpg`} alt="Réflexologie" />
-                </div>
-            </div>
-
-            <div className="service" data-aos="fade-left">
-                <div className="service-image">
-                    <img src={`${process.env.PUBLIC_URL}/images/workshop.jpg`} alt="Ateliers Collaboratifs" />
-                </div>
                 <div className="service-text">
                     <h3>Ateliers Collaboratifs</h3>
                     <p>
-                        Participez à des ateliers enrichissants où nous co-créons et apprenons ensemble.
-                        Idéal pour partager vos idées et repartir avec de nouvelles compétences.
+                        Participez à des ateliers enrichissants où nous co-créons et apprenons ensemble. Un excellent moyen de stimuler la créativité et de renforcer les liens.
+                    </p>
+                </div>
+                <div className="service-image">
+                    <img src={`${process.env.PUBLIC_URL}/images/workshop.jpg`} alt="Ateliers Collaboratifs" />
+                </div>
+            </div>
+
+            {/* Repas Partagés */}
+            <div className="service" data-aos="fade-left">
+                <div className="service-image">
+                    <img src={`${process.env.PUBLIC_URL}/images/shared-meal.jpg`} alt="Repas Partagés" />
+                </div>
+                <div className="service-text">
+                    <h3>Repas Partagés</h3>
+                    <p>
+                        Rejoignez-nous pour des repas collaboratifs, dans une ambiance conviviale et communautaire, autour de plats faits maison.
                     </p>
                 </div>
             </div>
 
+            {/* Proximité de la station thermale et sorties organisées */}
             <div className="service" data-aos="fade-right">
                 <div className="service-text">
-                    <h3>Repas Partagés</h3>
+                    <h3>Sorties aux Eaux Thermales</h3>
                     <p>
-                        Joignez-vous à nos repas collaboratifs pour partager des moments conviviaux.
-                        Une cuisine faite maison avec amour et un esprit communautaire.
+                        Nous sommes situés à proximité d'une station thermale. Profitez de sorties organisées pour vous détendre dans les eaux bienfaisantes et bénéficier de soins thermaux.
                     </p>
                 </div>
                 <div className="service-image">
-                    <img src={`${process.env.PUBLIC_URL}/images/shared-meal.jpg`} alt="Repas Partagés" />
+                    <img src={`${process.env.PUBLIC_URL}/images/eauthermale.jpg`} alt="Eaux Thermales" />
                 </div>
             </div>
+
+
         </section>
     );
 };

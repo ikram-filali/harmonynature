@@ -3,24 +3,24 @@ import React from 'react';
 const Presentation = () => {
     const cards = [
         {
-            title: "Un espace chaleureux",
+            title: "Un espace naturel et apaisant",
             content:
-                "Nichée au cœur de la nature, notre maison est un havre de paix où authenticité et convivialité se rencontrent.",
+                "Plongez dans un environnement serein, avec des cabines en bois naturel, des vues panoramiques sur la forêt et un espace conçu pour votre bien-être total.",
         },
         {
-            title: "Des activités collaboratives",
+            title: "Des soins de bien-être sur mesure",
             content:
-                "Participez à nos ateliers de cuisine, jardinage ou artisanat et vivez des moments de partage et d’apprentissage.",
+                "Offrez-vous une expérience unique avec nos soins du corps, comme l'hydrothérapie, l'aromathérapie, et des massages personnalisés pour une relaxation profonde.",
         },
         {
-            title: "Un bien-être total",
+            title: "Des activités conviviales et sociales",
             content:
-                "Découvrez nos massages, séances de yoga, méditation et autres activités dédiées à votre détente.",
+                "Participez à nos ateliers de cuisine, karaoké ou jeux de société pour renforcer les liens sociaux et vivre des moments chaleureux avec les autres.",
         },
         {
-            title: "Repas partagés",
+            title: "Des repas locaux et partagés",
             content:
-                "Rejoignez-nous autour d’une table conviviale pour savourer des plats faits maison, avec des ingrédients locaux.",
+                "Savourez des plats faits maison à partir d'ingrédients locaux dans une ambiance conviviale et détendue, parfaits pour partager un moment agréable avec vos proches.",
         },
     ];
 
