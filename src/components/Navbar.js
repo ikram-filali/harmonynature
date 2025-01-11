@@ -14,7 +14,7 @@ const Navbar = () => {
                 <div className="navbar-container">
                     <div className="navbar-logo">
 
-                        <Link to="/" className="logo-link">
+                        <Link to="/harmonynature" className="logo-link">
                             <img src={`${process.env.PUBLIC_URL}/images/logo.png`} alt="Logo Maison Bien-Être" className="logo-image" />
                             <span className="logo-text">Harmony Nature</span>
                         </Link>
