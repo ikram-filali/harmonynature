@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {Link} from "react-router-dom";
 
 const Navbar = () => {
     const [showModal, setShowModal] = useState(false);
@@ -13,14 +14,16 @@ const Navbar = () => {
                 <div className="navbar-container">
                     <div className="navbar-logo">
 
-                        <img src={`${process.env.PUBLIC_URL}/images/logo.png`} alt="Logo Maison Bien-Être" className="logo-image" />
-                        <span className="logo-text">Harmony Nature</span>
+                        <Link to="/" className="logo-link">
+                            <img src={`${process.env.PUBLIC_URL}/images/logo.png`} alt="Logo Maison Bien-Être" className="logo-image" />
+                            <span className="logo-text">Harmony Nature</span>
+                        </Link>
                     </div>
 
                     <div className="navbar-links">
-                        <a href="#services">Services</a>
+                        <Link to="/prestations">Prestations</Link>
+                        <Link to="/about-us">À propos</Link>
                         <a href="#reservation">Réserver</a>
-                        <a href="#contact">Contact</a>
                         <a onClick={handleModal}>Se Connecter</a>
                     </div>
                 </div>

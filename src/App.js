@@ -1,7 +1,7 @@
 import React from 'react';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 
 import Presentation from './pages/Presentation';
 import Services from './pages/Services';
@@ -10,23 +10,34 @@ import Footer from './components/Footer';
 import Accueil from "./components/Accueil";
 import Navbar from "./components/Navbar";
 import Reservation from "./pages/Reservation";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Prestations from "./pages/Prestations";
+import AboutUs from "./pages/AboutUs";
 
 function App() {
-    const [menuOpen, setMenuOpen] = useState(false);
     useEffect(() => {
-        AOS.init({ duration: 1000 }); // Initialisation avec une durée d'animation
+        AOS.init({ duration: 1000 });
     }, []);
-  return (
-      <div>
-          <Navbar />
-          <Accueil />
-          <Presentation />
-          <Services />
-          <Reservation />
-          <Contact />
-          <Footer />
-      </div>
-  );
+
+    return (
+        <Router>
+            <Navbar />
+            <Routes>
+                <Route path="/harmonynature" element={
+                    <>
+                        <Accueil />
+                        <Presentation />
+                        <Services />
+                        <Reservation />
+                        <Contact />
+                    </>
+                } />
+                <Route path="/prestations" element={<Prestations />} />
+                <Route path="/about-us" element={<AboutUs />} />
+            </Routes>
+            <Footer />
+        </Router>
+    );
 }
 
 export default App;
