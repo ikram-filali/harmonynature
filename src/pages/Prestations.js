@@ -8,7 +8,7 @@ const Prestations = () => {
         { id: 'massages', name: 'Massages' },
         { id: 'facials', name: 'Soins du Visage' },
         { id: 'bodycare', name: 'Soins du Corps' },
-        { id: 'thermal', name: 'Thermal & Bien-être' },
+        { id: 'bienetre', name: 'Bien-être' },
         { id: 'activities', name: 'Activités' },
         { id: 'formulas', name: 'Formules' },
 
@@ -32,20 +32,12 @@ const Prestations = () => {
             image: '/images/massage-suedois.jpg'
         },
         {
-            category: 'thermal',
+            category: 'bienetre',
             title: 'Sauna & Hammam',
             duration: ['45 min', '60 min'],
             price: ['30€', '50€'],
             description: 'Profitez des bienfaits de la chaleur sèche du sauna et de la vapeur du hammam pour une détoxification complète.',
             image: '/images/sauna.jpg'
-        },
-        {
-            category: 'thermal',
-            title: 'Sources Thermales',
-            duration: ['90 min'],
-            price: ['65€'],
-            description: "Une expérience unique dans nos sources thermales naturelles, incluant l'accès au sauna et hammam.",
-            image: '/images/thermal.jpg'
         },
         {
             category: 'activities',
@@ -74,18 +66,26 @@ const Prestations = () => {
         {
             category: 'bodycare',
             title: 'Aromathérapie',
-            duration: ['60 min'],
-            price: ['55€'],
-            description: 'Un soin qui utilise les bienfaits des huiles essentielles pour détendre, revitaliser et équilibrer votre énergie.',
-            image: '/images/aromatherapy.png'
+            duration: ['45 min'],
+            price: ['50€'],
+            description: 'Un soin qui utilise les bienfaits des huiles essentielles pour améliorer le sommeil, soulager les douleurs articulaires et harmoniser l’énergie.',
+            image: '/images/aromatherapy.png',
         },
         {
             category: 'facials',
-            title: 'Soin du Visage Hydratant',
+            title: 'Soin anti-âge raffermissant',
             duration: ['45 min'],
             price: ['45€'],
-            description: 'Un soin apaisant pour nourrir et hydrater votre peau en profondeur avec des produits naturels.',
-            image: '/images/soin-visage.png'
+            description: 'Un soin conçu pour raffermir la peau, réduire les signes du vieillissement et restaurer son élasticité naturelle.',
+            image: '/images/soin-anti-age.jpg',
+        },
+        {
+            category: 'facials',
+            title: 'Soin éclat et revitalisation',
+            duration: ['45 min'],
+            price: ['60€'],
+            description: 'Un soin dynamisant pour revitaliser votre teint et offrir à votre peau un éclat naturel.',
+            image: '/images/soin-eclat.jpg',
         },
         {
             category: 'activities',
@@ -110,6 +110,22 @@ const Prestations = () => {
             price: ['120€'],
             description: 'Massage, sauna, hammam et accès aux sources thermales pour une expérience bien-être complète.',
             image: '/images/formule-bienetre.png'
+        },
+        {
+            category: 'activities',
+            title: 'Yoga',
+            duration: ['60 min'],
+            price: ['20€'],
+            description: 'Une séance de yoga pour améliorer votre souplesse, votre équilibre et votre bien-être mental dans un cadre paisible.',
+            image: '/images/yoga_pres.jpg'
+        },
+        {
+            category: 'activities',
+            title: 'Méditation guidée',
+            duration: ['45 min'],
+            price: ['15€'],
+            description: 'Un moment de calme et d’introspection avec une méditation guidée pour apaiser votre esprit et réduire le stress.',
+            image: '/images/meditation_pres.jpg'
         }
     ];
 
