@@ -251,7 +251,11 @@ nav {
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: url('../public/images/hero-placeholder.jpg') no-repeat center center/cover;
+    background: url('../public/images/hero-placeholder.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -259,7 +263,9 @@ nav {
     text-align: center;
     padding: 0 2rem;
     color: #fff;
+    position: relative;
 }
+
 
 .hero h1 {
     font-size: 4rem;
@@ -870,4 +876,83 @@ footer {
 
 .location-info img:hover {
     transform: scale(1.05); /* Agrandit légèrement l'image au survol */
+}
+
+/* Page Planning */
+:root {
+    --bg-color: #f7f4ef; /* Fond beige clair */
+    --text-color: #4a4a4a; /* Texte principal */
+    --heading-color: #2b2b2b; /* Couleur des titres */
+    --accent-color: #c89f94; /* Accent rose poudré */
+    --secondary-color: #ece4db; /* Beige secondaire */
+    --link-hover-color: #b0867b; /* Accent foncé au survol */
+}
+
+.planning-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: var(--bg-color);
+    border-radius: 12px;
+}
+
+.planning-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--heading-color);
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.planning-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.planning-table th,
+.planning-table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid var(--secondary-color);
+}
+
+.planning-table th {
+    background-color: var(--accent-color);
+    color: white;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.planning-table td {
+    background-color: white;
+    font-size: 1rem;
+    color: var(--text-color);
+    transition: background-color 0.3s ease;
+}
+
+.planning-table td:hover {
+    background-color: var(--link-hover-color);
+    cursor: pointer;
+}
+
+.planning-table tr:nth-child(even) td {
+    background-color: var(--secondary-color);
+}
+
+@media screen and (max-width: 768px) {
+    .planning-container {
+        padding: 1.5rem;
+    }
+
+    .planning-table th,
+    .planning-table td {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    .planning-table {
+        font-size: 0.9rem;
+    }
 }

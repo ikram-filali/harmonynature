@@ -13,6 +13,7 @@ import Reservation from "./pages/Reservation";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Prestations from "./pages/Prestations";
 import AboutUs from "./pages/AboutUs";
+import Planning from "./components/Planning";
 
 function App() {
     useEffect(() => {
@@ -28,6 +29,7 @@ function App() {
                         <Accueil />
                         <Presentation />
                         <Services />
+                        <Planning />
                         <Reservation />
                         <Contact />
                     </>

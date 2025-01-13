@@ -57,14 +57,6 @@ const Prestations = () => {
         },
         {
             category: 'bodycare',
-            title: 'Hydrothérapie',
-            duration: ['60 min'],
-            price: ['50€'],
-            description: 'Plongez dans une expérience relaxante avec des bains d’eau thermale pour revitaliser votre corps et apaiser vos muscles.',
-            image: '/images/hydrotherapy.jpg'
-        },
-        {
-            category: 'bodycare',
             title: 'Aromathérapie',
             duration: ['45 min'],
             price: ['50€'],
@@ -89,14 +81,6 @@ const Prestations = () => {
         },
         {
             category: 'activities',
-            title: 'Atelier Cuisine',
-            duration: ['120 min'],
-            price: ['40€'],
-            description: 'Participez à un atelier de cuisine participative, apprenez de nouvelles recettes et dégustez ensemble.',
-            image: '/images/cuisine.jpg'
-        },
-        {
-            category: 'activities',
             title: 'Jeux de Société',
             duration: ['60 min'],
             price: ['0€'],
@@ -105,11 +89,43 @@ const Prestations = () => {
         },
         {
             category: 'formulas',
-            title: 'Formule Bien-Être',
-            duration: ['180 min'],
-            price: ['120€'],
-            description: 'Massage, sauna, hammam et accès aux sources thermales pour une expérience bien-être complète.',
-            image: '/images/formule-bienetre.png'
+            title: 'Formule "Détente Nature" - ½ journée',
+            duration: ['½ journée'],
+            price: ['50€'],
+            description: 'Idéal pour une pause relaxante en pleine forêt. Accès libre au sauna & hammam. 1 massage au choix (pierres chaudes ou suédois - 30 min). 1 séance de yoga ou méditation en extérieur.',
+            image: '/images/formule-détente-nature.jpg'
+        },
+        {
+            category: 'formulas',
+            title: 'Formule "Évasion Bien-Être" - Journée complète',
+            duration: ['1 journée'],
+            price: ['90€'],
+            description: 'Un parcours bien-être complet. Accès libre à toutes les installations (sauna, hammam). 1 massage au choix (60 min). 1 séance de yoga + 1 séance de méditation. Déjeuner inclus (buffet de plats locaux).',
+            image: '/images/formule-évasion-bienetre.jpg'
+        },
+        {
+            category: 'formulas',
+            title: 'Formule "Sérénité & Lien Social"',
+            duration: ['½ journée'],
+            price: ['30€'],
+            description: 'Pensée pour les personnes âgées cherchant à tisser du lien social. 1 activité participative au choix (karaoké, jeux de société, jardinage). Pause détente avec thé/café dans l’espace convivial. 1 soin du visage express (20 min) pour un moment de bien-être.',
+            image: '/images/formule-serenite-lien-social.jpg'
+        },
+        {
+            category: 'formulas',
+            title: 'Abonnement "Zen en Forêt" - 1 mois',
+            duration: ['1 mois'],
+            price: ['150€/mois'],
+            description: 'Pour les habitués du bien-être. 1 accès illimité au sauna/hammam. 2 activités par semaine au choix. 1 massage par semaine.',
+            image: '/images/abonnement-zen-en-foret.jpg'
+        },
+        {
+            category: 'formulas',
+            title: 'Carte "10 Massages"',
+            duration: ['10 massages'],
+            price: ['350€'],
+            description: 'Une offre économique pour les amateurs de massages. 10 massages au choix (pierres chaudes ou suédois, 45 min).',
+            image: '/images/carte-10-massages.jpg'
         },
         {
             category: 'activities',
