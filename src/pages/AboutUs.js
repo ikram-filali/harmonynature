@@ -34,27 +34,27 @@ const AboutUs = () => {
                     <h4>Ikram FILALI</h4>
                     <p>Coordinatrice des activités, Ikram est spécialisée dans les ateliers de groupe et de relaxation.</p>
                 </div>
-                {/*<div className="team-member">
-                    <img src={`${process.env.PUBLIC_URL}/images/team-member4.jpg`} alt="Membre de l'équipe" />
-                    <h4>Achille BERGERET</h4>
-                    <p>Réflexologue et expert en techniques de relaxation, Achille aide à relâcher les tensions physiques et émotionnelles.</p>
-                </div>*/}
                 <div className="team-member">
-                    <img src={`${process.env.PUBLIC_URL}/images/team-member5.jpg`} alt="Membre de l'équipe" />
+                    <img src={`${process.env.PUBLIC_URL}/images/achille.jpg`} alt="Membre de l'équipe" />
+                    <h4>Achille BERGERET</h4>
+                    <p>Praticien en Aromathérapie et Bien-êtr, Achille aide nos clients à améliorer leur bien-être à travers les huiles essentielles..</p>
+                </div>
+                <div className="team-member">
+                    <img src={`${process.env.PUBLIC_URL}/images/othmane.jpg`} alt="Membre de l'équipe" />
                     <h4>Othmane DOUIDA</h4>
                     <p>Spécialiste en nutrition et bien-être, Othmane accompagne nos clients dans leur parcours de santé globale.</p>
                 </div>
                 <div className="team-member">
-                    <img src={`${process.env.PUBLIC_URL}/images/team-member6.jpg`} alt="Membre de l'équipe" />
+                    <img src={`${process.env.PUBLIC_URL}/images/honoris.jpeg`} alt="Membre de l'équipe" />
                     <h4>Honoris GRACIAS NDERYIMANA</h4>
-                    <p>Conseiller en développement personnel, Honoris vous aide à trouver la paix intérieure et à développer votre confiance en vous.</p>
+                    <p>Conseiller en développement personnel et méditation, Honoris vous aide à trouver la paix intérieure et à développer votre confiance en vous.</p>
                 </div>
             </div>
 
             <div className="location-info">
                 <h3>Où nous trouver ?</h3>
                 <p>Nous sommes situés à Lamalou-les-Bains, un endroit calme et ressourçant, idéal pour prendre soin de soi et se reconnecter à la nature.</p>
-                <img src={`${process.env.PUBLIC_URL}/images/lamalou.jpeg`} alt="Photo de lamalou les bains"/>
+                <img src={`${process.env.PUBLIC_URL}/images/lamalou.png`} alt="Photo de lamalou les bains"/>
             </div>
         </section>
     );
