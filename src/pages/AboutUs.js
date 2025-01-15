@@ -45,7 +45,7 @@ const AboutUs = () => {
                     <p>Spécialiste en nutrition et bien-être, Othmane accompagne nos clients dans leur parcours de santé globale.</p>
                 </div>
                 <div className="team-member">
-                    <img src={`${process.env.PUBLIC_URL}/images/honoris.jpeg`} alt="Membre de l'équipe" />
+                    <img src={`${process.env.PUBLIC_URL}/images/honoris.jpg`} alt="Membre de l'équipe" />
                     <h4>Honoris GRACIAS NDERYIMANA</h4>
                     <p>Conseiller en développement personnel et méditation, Honoris vous aide à trouver la paix intérieure et à développer votre confiance en vous.</p>
                 </div>
