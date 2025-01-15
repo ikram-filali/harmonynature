@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/harmonynature/static/css/main.2e4c7d12.css",
-    "main.js": "/harmonynature/static/js/main.58b0a68f.js",
+    "main.css": "/harmonynature/static/css/main.56a2e99d.css",
+    "main.js": "/harmonynature/static/js/main.c8339447.js",
     "static/media/hero-placeholder.jpg": "/harmonynature/static/media/hero-placeholder.01401e2a5aa38bdd384b.jpg",
     "index.html": "/harmonynature/index.html",
-    "main.2e4c7d12.css.map": "/harmonynature/static/css/main.2e4c7d12.css.map",
-    "main.58b0a68f.js.map": "/harmonynature/static/js/main.58b0a68f.js.map"
+    "main.56a2e99d.css.map": "/harmonynature/static/css/main.56a2e99d.css.map",
+    "main.c8339447.js.map": "/harmonynature/static/js/main.c8339447.js.map"
   },
   "entrypoints": [
-    "static/css/main.2e4c7d12.css",
-    "static/js/main.58b0a68f.js"
+    "static/css/main.56a2e99d.css",
+    "static/js/main.c8339447.js"
   ]
 }
