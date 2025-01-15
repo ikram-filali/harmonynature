@@ -37,7 +37,7 @@ const AboutUs = () => {
                 <div className="team-member">
                     <img src={`${process.env.PUBLIC_URL}/images/achille.jpg`} alt="Membre de l'équipe" />
                     <h4>Achille BERGERET</h4>
-                    <p>Praticien en Aromathérapie et Bien-êtr, Achille aide nos clients à améliorer leur bien-être à travers les huiles essentielles..</p>
+                    <p>Praticien en Aromathérapie et Bien-être, Achille aide nos clients à améliorer leur bien-être à travers les huiles essentielles..</p>
                 </div>
                 <div className="team-member">
                     <img src={`${process.env.PUBLIC_URL}/images/othmane.jpg`} alt="Membre de l'équipe" />
