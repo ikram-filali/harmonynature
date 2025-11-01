@@ -825,16 +825,16 @@ footer {
     margin-top: 30px;
 }
 
-.team-member {
+/*.team-member {
     background-color: #fff;
     color: #333;
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    flex: 1 1 200px; /* Permet à chaque carte de se redimensionner */
-    max-width: 250px; /* Assure que chaque carte ne dépasse pas 250px */
-    min-width: 200px; /* Limite la taille minimale des cartes */
+    flex: 1 1 200px; 
+    max-width: 250px; 
+    min-width: 200px;
 }
 
 .team-member img {
@@ -856,17 +856,17 @@ footer {
 }
 @media (max-width: 768px) {
     .team-member {
-        flex: 1 1 45%; /* Cartes sur deux colonnes sur les petits écrans */
-        max-width: 45%; /* Limite la largeur des cartes */
+        flex: 1 1 45%; 
+        max-width: 45%; 
     }
 }
 
 @media (max-width: 480px) {
     .team-member {
-        flex: 1 1 100%; /* Cartes sur une seule colonne sur les très petits écrans */
+        flex: 1 1 100%; 
         max-width: 100%;
     }
-}
+}*/
 
 .location-info {
     background-color: #e2e2e2;
@@ -898,6 +898,122 @@ footer {
 .location-info img:hover {
     transform: scale(1.05); /* Agrandit légèrement l'image au survol */
 }
+
+/* nouveau about us*/
+/* Conteneurs cartes (fond blanc, même palette) */
+.about-card,
+.location-card {
+  max-width: 1800px;
+  margin: 0 auto 28px;
+  background: #fff;            /* contraste propre */
+  border-radius: 10px;
+  padding: 28px 24px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  text-align: left;            /* éviter le centrage du long texte */
+}
+
+/* Ajuste titres et sous-titres, sans changer les couleurs */
+.about-us h2,
+.about-us h3 {
+  text-align: center;
+}
+
+/* Grille responsive : texte / localisation */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 100px;
+  align-items: start;
+  margin-top: 100px;
+}
+@media (max-width: 992px) {
+  .about-grid { grid-template-columns: 1fr; }
+}
+.about-grid p {
+    font-size: 1.3rem;
+}
+.about-grid ul {
+    font-size: 1.3rem;
+} 
+
+/* Liste stylée, nette (pas de • flottants au centre) */
+.about-list {
+  list-style: none;
+  padding: 0;
+  margin: 18px 0 24px;
+}
+.about-list li {
+  position: relative;
+  padding-left: 26px;
+  margin: 10px 0;
+  color: #555;                 /* ta teinte de paragraphe */
+}
+.about-list li::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 9px;
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  background: #4a4a4a;         /* cohérent avec tes titres */
+  opacity: 0.9;
+}
+
+/* Cartes contact */
+.contact-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin: 14px 0 0;
+}
+@media (max-width: 768px) {
+  .contact-cards { grid-template-columns: 1fr; }
+}
+.contact-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 14px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+.contact-card h4 {
+  margin: 0 0 6px;
+  font-size: 1.2rem;
+  color: #4a4a4a;
+}
+.contact-card p, .contact-card a {
+  margin: 0;
+  font-size: 1rem;
+  color: #555;
+  text-decoration: none;
+}
+
+/* Location bloc : conserve #e2e2e2 mais encadre le contenu */
+.location-info {
+  background-color: #e2e2e2;
+  border-radius: 10px;
+  padding: 18px;
+}
+
+/* Carte Google Maps responsive (plus de width:60%) */
+.map-container {
+  margin-top: 16px;
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+/* Petites marges globales */
+.about-us p {
+  margin-bottom: 18px;  /* ton style gardé, juste plus harmonieux dans la carte */
+}
+
 
 /* Page Planning */
 :root {
