@@ -3,30 +3,30 @@ import React from 'react';
 const Presentation = () => {
     const cards = [
         {
-            title: "Un espace naturel et apaisant",
+            title: "Élégance marocaine authentique",
             content:
-                "Plongez dans un environnement serein, avec des cabines en bois naturel, des vues panoramiques sur la forêt et un espace conçu pour votre bien-être total.",
+                "Plongez dans l’univers du caftan et de la djellaba marocains, où chaque création allie savoir-faire artisanal et raffinement intemporel. Chaque pièce est pensée pour sublimer la beauté naturelle tout en préservant l’âme du patrimoine marocain.",
         },
         {
-            title: "Des soins de bien-être sur mesure",
+            title: "Créations sur mesure et personnalisées",
             content:
-                "Offrez-vous une expérience unique avec nos soins du corps, comme l'hydrothérapie, l'aromathérapie, et des massages personnalisés pour une relaxation profonde.",
+                "Offrez-vous une expérience unique avec nos modèles confectionnés à la main, ajustés à votre morphologie et vos préférences. Choisissez vos tissus, vos broderies et vos couleurs pour une tenue unique, élégante et parfaitement adaptée à votre style."
         },
         {
-            title: "Des activités conviviales et sociales",
+            title: "Qualité, durabilité et innovation",
             content:
-                "Participez à nos ateliers de cuisine, karaoké ou jeux de société pour renforcer les liens sociaux et vivre des moments chaleureux avec les autres.",
+                "Nos collections marient techniques traditionnelles et technologies modernes : couture fine, finitions haut de gamme, matériaux écoresponsables et design assisté par ordinateur. Un engagement pour une mode durable et des créations qui traversent le temps.",
         },
         {
-            title: "Des repas locaux et partagés",
+            title: "Une expérience partagée et inspirante",
             content:
-                "Savourez des plats faits maison à partir d'ingrédients locaux dans une ambiance conviviale et détendue, parfaits pour partager un moment agréable avec vos proches.",
+                "Découvrez nos collections exclusives en ligne ou lors d’événements et défilés. Nous célébrons la féminité, la culture et la créativité marocaine à travers chaque création, en valorisant les artisans locaux et l’art du détail.",
         },
     ];
 
     return (
         <section id="presentation" className="presentation-section">
-            <h2 className="text-4xl font-bold mb-8 text-center text-heading">Découvrez Harmony Nature</h2>
+            <h2 className="text-4xl font-bold mb-8 text-center text-heading">Découvrez Loubna Couture</h2>
             <div className="card-container">
                 {cards.map((card, index) => (
                     <div
