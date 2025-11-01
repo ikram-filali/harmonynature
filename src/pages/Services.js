@@ -6,25 +6,25 @@ const Services = () => {
             {/* Regroupement Yoga et Méditation */}
             <div className="service" data-aos="fade-right">
                 <div className="service-text">
-                    <h3>Yoga et Méditation</h3>
+                    <h3>Confection sur mesure</h3>
                     <p>
-                        Profitez de séances de yoga et de méditation pour renforcer votre corps, apaiser votre esprit et améliorer votre bien-être général.
+                        Caftans, djellabas et abayas réalisés selon vos envies — coupe, tissu et finitions personnalisées pour un résultat unique.
                     </p>
                 </div>
                 <div className="service-image">
-                    <img src={`${process.env.PUBLIC_URL}/images/yoga.jpg`} alt="Yoga et Méditation" />
+                    <img src={`${process.env.PUBLIC_URL}/images/confection_sur_mesure.jpg`} />
                 </div>
             </div>
 
             {/* Regroupement des Soins (Visage, Massage, etc.) */}
             <div className="service" data-aos="fade-left">
                 <div className="service-image">
-                    <img src={`${process.env.PUBLIC_URL}/images/soins.jpg`} alt="Soins" />
+                    <img src={`${process.env.PUBLIC_URL}/images/retouches.jpg`} alt="Soins" />
                 </div>
                 <div className="service-text">
-                    <h3>Soins Bien-Être</h3>
+                    <h3>Retouche et restauration</h3>
                     <p>
-                        Offrez-vous des moments de détente avec nos soins de visage, massage relaxant, hydrothérapie et aromathérapie, pour prendre soin de vous en profondeur.
+                        Redonnez vie à vos pièces préférées grâce à un ajustement soigné et des finitions raffinées.
                     </p>
                 </div>
             </div>
@@ -32,31 +32,31 @@ const Services = () => {
             {/* Ateliers Collaboratifs */}
             <div className="service" data-aos="fade-right">
                 <div className="service-text">
-                    <h3>Ateliers Collaboratifs</h3>
+                    <h3>Collections exclusives</h3>
                     <p>
-                        Participez à des ateliers enrichissants où nous co-créons et apprenons ensemble. Un excellent moyen de stimuler la créativité et de renforcer les liens.
+                        Découvrez des modèles limités et originaux, inspirés du patrimoine marocain et revisités avec une touche contemporaine.
                     </p>
                 </div>
                 <div className="service-image">
-                    <img src={`${process.env.PUBLIC_URL}/images/workshop.jpg`} alt="Ateliers Collaboratifs" />
+                    <img src={`${process.env.PUBLIC_URL}/images/caftans.jpg`} alt="Ateliers Collaboratifs" />
                 </div>
             </div>
 
             {/* Repas Partagés */}
             <div className="service" data-aos="fade-left">
                 <div className="service-image">
-                    <img src={`${process.env.PUBLIC_URL}/images/shared-meal.jpg`} alt="Repas Partagés" />
+                    <img src={`${process.env.PUBLIC_URL}/images/conseil.jpg`} alt="Repas Partagés" />
                 </div>
                 <div className="service-text">
-                    <h3>Repas Partagés</h3>
+                    <h3>Conseil & commande en ligne</h3>
                     <p>
-                        Rejoignez-nous pour des repas collaboratifs, dans une ambiance conviviale et communautaire, autour de plats faits maison.
+                        Un accompagnement personnalisé : prise de mesure à distance, suivi des commandes et recommandations stylistiques.
                     </p>
                 </div>
             </div>
 
             {/* Proximité de la station thermale et sorties organisées */}
-            <div className="service" data-aos="fade-right">
+            {/*<div className="service" data-aos="fade-right">
                 <div className="service-text">
                     <h3>Sorties aux Eaux Thermales</h3>
                     <p>
@@ -66,7 +66,7 @@ const Services = () => {
                 <div className="service-image">
                     <img src={`${process.env.PUBLIC_URL}/images/eauthermale.jpg`} alt="Eaux Thermales" />
                 </div>
-            </div>
+            </div>*/}
 
 
         </section>

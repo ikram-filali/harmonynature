@@ -29,7 +29,7 @@ function App() {
                         <Accueil />
                         <Presentation />
                         <Services />
-                        <Planning />
+                        {/*<Planning />*/}
                         <Reservation />
                         <Contact />
                     </>
