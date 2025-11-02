@@ -45,7 +45,7 @@ const Services = () => {
             {/* Repas Partagés */}
             <div className="service" data-aos="fade-left">
                 <div className="service-image">
-                    <img src={`${process.env.PUBLIC_URL}/images/conseil.jpg`} alt="Repas Partagés" />
+                    <img src={`${process.env.PUBLIC_URL}/images/CONSEIL.jpg`} alt="Repas Partagés" />
                 </div>
                 <div className="service-text">
                     <h3>Conseil & commande en ligne</h3>

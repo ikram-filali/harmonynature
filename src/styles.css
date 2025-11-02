@@ -786,12 +786,12 @@ footer {
 
 /** Page AboutUs **/
 .about-us {
-    padding: 40px 20px;
+    padding: 20px 0 40px;
     background-color: #f4f4f4;
     color: #333;
     font-family: Arial, sans-serif;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 90px;
 }
 
 
@@ -907,7 +907,7 @@ footer {
   margin: 0 auto 28px;
   background: #fff;            /* contraste propre */
   border-radius: 10px;
-  padding: 28px 24px;
+  padding: 20px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
   text-align: left;            /* éviter le centrage du long texte */
 }
@@ -916,6 +916,7 @@ footer {
 .about-us h2,
 .about-us h3 {
   text-align: center;
+  margin-top: 0px;;
 }
 
 /* Grille responsive : texte / localisation */
@@ -924,7 +925,7 @@ footer {
   grid-template-columns: 1.2fr 1fr;
   gap: 100px;
   align-items: start;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 @media (max-width: 992px) {
   .about-grid { grid-template-columns: 1fr; }
@@ -996,7 +997,7 @@ footer {
 /* Carte Google Maps responsive (plus de width:60%) */
 .map-container {
   margin-top: 16px;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 16 / 8;
   width: 100%;
   overflow: hidden;
   border-radius: 10px;
